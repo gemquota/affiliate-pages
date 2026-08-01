@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CoinSpot Affiliate — Earn 30% Commission for 3 Years</title>
+<meta name="description" content="Join the CoinSpot Affiliate Program. Earn 30% commission on trading fees from every member you refer — paid monthly for three years.">
+<meta property="og:title" content="CoinSpot Affiliate — Earn 30% Commission for 3 Years">
+<meta property="og:description" content="Commission starts at 30% and is paid monthly for three years per verified member. Australia's trusted crypto platform, 3M+ users.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0A0D12">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0A0D12; --bg2:#0E131B; --panel:#121823; --panel2:#17202D;
+    --line:#223042; --ink:#EAF1F9; --dim:#8FA0B5; --blue:#2F6BFF;
+    --blue2:#004FEE; --gold:#FFC24B; --mint:#4ADE80; --red:#FF5C5C;
+    --disp:"Unbounded",sans-serif; --mono:"IBM Plex Mono",monospace;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);font-family:var(--mono);font-size:15px;line-height:1.65;
+    background-image:radial-gradient(ellipse 70% 45% at 50% -5%,rgba(47,107,255,.14),transparent),
+      radial-gradient(ellipse 45% 35% at 92% 18%,rgba(255,194,75,.05),transparent);
+    background-attachment:fixed}
+  ::selection{background:var(--blue);color:#fff}
+  a{color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+
+  /* marquee tape */
+  .tape{overflow:hidden;white-space:nowrap;border-bottom:1px solid var(--line);background:#070A0E;padding:8px 0;font-size:12px;letter-spacing:.14em;color:var(--dim)}
+  .tape .inner{display:inline-block;padding-left:100%;animation:tape 36s linear infinite}
+  .tape .inner b{color:var(--gold);font-weight:600}
+  @keyframes tape{to{transform:translateX(-100%)}}
+
+  /* nav */
+  nav{position:sticky;top:0;z-index:40;background:rgba(10,13,18,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 22px;max-width:1080px;margin:0 auto}
+  .brand{font-family:var(--disp);font-size:15px;letter-spacing:.06em;color:var(--ink)}
+  .brand i{color:var(--blue);font-style:normal}
+  .nav a.muted{color:var(--dim);font-size:13px;text-decoration:none;margin-right:18px}
+  .nav a.muted:hover{color:var(--ink)}
+
+  .btn{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff;font-family:var(--disp);font-size:14px;font-weight:600;letter-spacing:.02em;text-decoration:none;padding:15px 26px;border-radius:4px;border:1px solid rgba(255,255,255,.18);box-shadow:0 8px 24px rgba(0,79,238,.35);transition:transform .15s ease,box-shadow .15s ease}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(0,79,238,.5)}
+  .btn.ghost{background:transparent;border-color:var(--line);box-shadow:none;color:var(--ink)}
+  .btn.ghost:hover{border-color:var(--blue);color:#fff}
+
+  /* hero */
+  .hero{padding:96px 0 70px;position:relative}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.22em;color:var(--gold);text-transform:uppercase;border:1px solid rgba(255,194,75,.35);padding:7px 14px;border-radius:100px;margin-bottom:28px}
+  .eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--gold);animation:pulse 2s infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+  h1{font-family:var(--disp);font-size:clamp(30px,5.4vw,58px);line-height:1.08;font-weight:700;letter-spacing:-.01em;max-width:16ch}
+  h1 .grad{background:linear-gradient(100deg,var(--gold),#FF8A4C);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{max-width:56ch;margin-top:22px;color:var(--dim);font-size:16px}
+  .sub b{color:var(--ink);font-weight:600}
+  .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+  .trust{margin-top:38px;display:flex;flex-wrap:wrap;gap:10px 26px;font-size:12px;color:var(--dim);letter-spacing:.08em}
+  .trust span::before{content:"◆ ";color:var(--blue)}
+
+  /* reveal */
+  .rv{opacity:0;transform:translateY(18px);animation:rise .7s cubic-bezier(.2,.7,.3,1) forwards}
+  @keyframes rise{to{opacity:1;transform:none}}
+  .d1{animation-delay:.05s}.d2{animation-delay:.15s}.d3{animation-delay:.25s}.d4{animation-delay:.35s}.d5{animation-delay:.45s}
+
+  section{padding:72px 0}
+  .sec-k{font-size:12px;letter-spacing:.24em;color:var(--blue);text-transform:uppercase;margin-bottom:14px}
+  h2{font-family:var(--disp);font-size:clamp(24px,3.4vw,38px);line-height:1.15;font-weight:600;max-width:22ch}
+
+  /* ladder */
+  .ladder{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:34px;margin-top:44px}
+  .ladder-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:16px;margin-bottom:26px}
+  .ladder-head .big{font-family:var(--disp);font-size:30px;color:var(--gold)}
+  .ladder-head .note{color:var(--dim);font-size:13px;max-width:38ch}
+  .row{margin-bottom:26px}
+  .row:last-child{margin-bottom:0}
+  .row .lab{display:flex;justify-content:space-between;font-size:13px;letter-spacing:.08em;margin-bottom:9px}
+  .row .lab .pct{font-family:var(--disp);font-size:18px;color:var(--ink)}
+  .bar{height:14px;background:var(--bg2);border:1px solid var(--line);border-radius:100px;overflow:hidden}
+  .bar i{display:block;height:100%;border-radius:100px;background:linear-gradient(90deg,var(--blue),var(--blue2));width:0;animation:grow 1.2s cubic-bezier(.2,.7,.3,1) forwards}
+  .bar.hot i{background:linear-gradient(90deg,var(--gold),#FF8A4C)}
+  @keyframes grow{to{width:var(--w)}}
+  .row b.t30 i{--w:100%}.row b.t15 i{--w:50%}.row b.t05 i{--w:17%}
+  .row .foot{color:var(--dim);font-size:12px;margin-top:7px}
+
+  /* fee cards */
+  .grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:40px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:24px;transition:transform .18s ease,border-color .18s ease}
+  .card:hover{transform:translateY(-4px);border-color:var(--blue)}
+  .card .k{font-size:11px;letter-spacing:.2em;color:var(--dim);text-transform:uppercase}
+  .card .v{font-family:var(--disp);font-size:30px;margin:12px 0 6px;color:var(--gold)}
+  .card p{color:var(--dim);font-size:13px}
+
+  /* stats */
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:44px}
+  .stat{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:22px}
+  .stat .n{font-family:var(--disp);font-size:26px;color:var(--ink)}
+  .stat .n em{color:var(--blue);font-style:normal}
+  .stat .l{color:var(--dim);font-size:12px;margin-top:6px;letter-spacing:.06em}
+
+  /* steps */
+  .steps{counter-reset:st;margin-top:40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+  .step{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:26px;position:relative}
+  .step::before{counter-increment:st;content:"0" counter(st);position:absolute;top:20px;right:22px;font-family:var(--disp);font-size:26px;color:var(--line)}
+  .step h3{font-family:var(--disp);font-size:16px;margin-bottom:10px}
+  .step p{color:var(--dim);font-size:13px}
+
+  /* faq */
+  .faq{margin-top:36px;border-top:1px solid var(--line)}
+  details{border-bottom:1px solid var(--line);padding:20px 4px}
+  summary{cursor:pointer;font-weight:600;font-size:15px;list-style:none;display:flex;justify-content:space-between;gap:14px}
+  summary::after{content:"+";color:var(--blue);font-size:20px;line-height:1}
+  details[open] summary::after{content:"–"}
+  details p{color:var(--dim);font-size:14px;margin-top:12px;max-width:70ch}
+
+  .cta-band{background:linear-gradient(135deg,rgba(47,107,255,.12),rgba(0,79,238,.05));border:1px solid var(--line);border-radius:12px;padding:52px 34px;text-align:center;margin-top:60px}
+  .cta-band h2{max-width:none}
+  .cta-band p{color:var(--dim);margin:16px auto 28px;max-width:52ch}
+  .copyrow{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:14px}
+  .copybox{display:inline-flex;align-items:center;gap:10px;background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:9px 14px;font-size:13px;color:var(--dim);max-width:100%}
+  .copybox code{color:var(--gold);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+  footer{border-top:1px solid var(--line);padding:38px 0 46px;color:var(--dim);font-size:12px}
+  footer .links{display:flex;flex-wrap:wrap;gap:18px;margin-bottom:18px}
+  footer a{color:var(--dim)}
+  footer a:hover{color:var(--ink)}
+
+  @media(max-width:640px){
+    .hero{padding:64px 0 48px}
+    .ladder{padding:24px}
+    .nav .muted{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="tape"><div class="inner">
+  COMMISSION PAID MONTHLY <b>◆</b> 30% YEAR ONE <b>◆</b> 15% YEAR TWO <b>◆</b> 5% YEAR THREE <b>◆</b> AUSTRALIA'S TRUSTED CRYPTO PLATFORM <b>◆</b> 3M+ USERS <b>◆</b> PAID BY THE 15TH <b>◆</b>&nbsp;&nbsp;&nbsp;&nbsp;
+  COMMISSION PAID MONTHLY <b>◆</b> 30% YEAR ONE <b>◆</b> 15% YEAR TWO <b>◆</b> 5% YEAR THREE <b>◆</b> AUSTRALIA'S TRUSTED CRYPTO PLATFORM <b>◆</b> 3M+ USERS <b>◆</b> PAID BY THE 15TH <b>◆</b>&nbsp;&nbsp;&nbsp;&nbsp;
+</div></div>
+
+<nav>
+  <div class="nav">
+    <div class="brand">COINSPOT<i>·AFFILIATE</i></div>
+    <div>
+      <a class="muted" href="https://www.coinspot.com.au/my/affiliate">My affiliate dashboard</a>
+      <a class="btn" style="padding:11px 20px;font-size:12px" href="https://slap.red/4ral">Get started</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero wrap">
+  <div class="eyebrow rv d1">Affiliate program · open now</div>
+  <h1 class="rv d2">Take a cut of the crypto boom — <span class="grad">for three years.</span></h1>
+  <p class="sub rv d3">Earn <b>30% commission</b> on trading fees from every member who joins through your link. Paid monthly, for up to three years per member — a growing revenue stream that compounds as you refer.</p>
+  <div class="cta-row rv d4">
+    <a class="btn" href="https://slap.red/4ral">Get my affiliate link →</a>
+    <a class="btn ghost" href="https://www.coinspot.com.au/my/affiliate">Open my dashboard</a>
+  </div>
+  <div class="trust rv d5">
+    <span>3M+ users</span><span>Paid by the 15th</span><span>Since 2014</span><span>Certified 2020</span>
+  </div>
+</header>
+
+<section class="wrap">
+  <div class="sec-k rv">The commission ladder</div>
+  <h2 class="rv">The more members you bring on, the more they earn you.</h2>
+  <div class="ladder rv d2">
+    <div class="ladder-head">
+      <div class="big">30% → 15% → 5%</div>
+      <div class="note">Commission is calculated on trading fees from the moment each member verifies, then steps down every 12 months over three years.</div>
+    </div>
+    <div class="row"><div class="lab"><span>MONTHS 0–12</span><span class="pct">30% commission</span></div>
+      <div class="bar b t30"><i></i></div><div class="foot">Your peak rate — every new verified member starts here.</div></div>
+    <div class="row"><div class="lab"><span>MONTHS 12–24</span><span class="pct">15% commission</span></div>
+      <div class="bar b t15"><i></i></div><div class="foot">Still generous — and still on their trading fees.</div></div>
+    <div class="row"><div class="lab"><span>MONTHS 24–36</span><span class="pct">5% commission</span></div>
+      <div class="bar hot b t05"><i></i></div><div class="foot">Three full years of earnings per member you refer.</div></div>
+  </div>
+
+  <div class="grid3">
+    <div class="card rv d2"><div class="k">BTC instant buy / sell</div><div class="v">1% fee</div><p>CoinSpot charges 1% on AUD instant Buy/Sell for Bitcoin — you earn 30% of the net fees collected.</p></div>
+    <div class="card rv d3"><div class="k">Other cryptocurrencies</div><div class="v">1% fee</div><p>1% on AUD instant Buy/Sell for all other coins, with the same 30% commission on your share.</p></div>
+    <div class="card rv d4"><div class="k">Crypto-to-crypto trades</div><div class="v">0.5% fee</div><p>0.5% on swaps between cryptocurrencies — included in the fees you're paid on.</p></div>
+  </div>
+
+  <div class="stats">
+    <div class="stat rv d2"><div class="n">3 <em>years</em></div><div class="l">commission lifetime per verified member</div></div>
+    <div class="stat rv d3"><div class="n">15th <em>monthly</em></div><div class="l">payout date, every month</div></div>
+    <div class="stat rv d4"><div class="n">30<em>%</em></div><div class="l">starting commission rate</div></div>
+    <div class="stat rv d5"><div class="n">$5k<em>+/mo</em></div><div class="l">what CoinSpot's top members earn*</div></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="sec-k rv">How it works</div>
+  <h2 class="rv">Three steps to a monthly income stream.</h2>
+  <div class="steps">
+    <div class="step rv d2"><h3>Create your account</h3><p>Sign up for a free CoinSpot account (individual or business). SMSF accounts aren't eligible for the affiliate program.</p></div>
+    <div class="step rv d3"><h3>Share your affiliate link</h3><p>Every member who verifies through your link becomes part of your three-year earning pool.</p></div>
+    <div class="step rv d4"><h3>Get paid monthly</h3><p>Commission lands by the 15th of each month. Keep referring and the pool keeps growing.</p></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="sec-k rv">FAQ</div>
+  <h2 class="rv">Straight answers.</h2>
+  <div class="faq rv d2">
+    <details open><summary>How much can I actually earn?</summary><p>Commission starts at 30% of net trading fees for the first 12 months after a member verifies, then 15% for months 12–24 and 5% for months 24–36. CoinSpot states some of its most successful affiliates earn over $5,000 per month.*</p></details>
+    <details><summary>When do I get paid?</summary><p>Payments are issued by the 15th of each month, based on fees collected from members you referred — for three years from each member's verification.</p></details>
+    <details><summary>What counts toward my commission?</summary><p>Your commission is a percentage of the net fees CoinSpot collects from your referred members: 1% on AUD instant Buy/Sell (Bitcoin), 1% on other coins, and 0.5% on crypto-to-crypto trades.</p></details>
+    <details><summary>Is there a limit to how many people I can refer?</summary><p>No — more verified members simply means a larger monthly commission pool. Higher-performing members can also be contacted about incentives above the standard structure.</p></details>
+    <details><summary>Are SMSF accounts eligible?</summary><p>No. SMSF (self-managed super) accounts can't participate due to legislative restrictions — you'll need a separate individual or business account to join.</p></details>
+    <details><summary>Can the terms change?</summary><p>CoinSpot notes that fees and commissions are subject to change, and that they may offer incentives above this structure for high performers. Always check the current Affiliate Terms &amp; Conditions.</p></details>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="cta-band rv">
+    <h2>Start earning this month.</h2>
+    <p>Your affiliate link is one click away. Share it anywhere, watch your commission pool grow, and get paid by the 15th.</p>
+    <a class="btn" href="https://slap.red/4ral">Get my affiliate link →</a>
+    <div class="copyrow">
+      <div class="copybox"><code>slap.red/4ral</code></div>
+      <button class="btn ghost" style="padding:10px 18px;font-size:12px" data-copy="https://slap.red/4ral" data-label="Copy link" onclick="copyLink(this)">Copy link</button>
+    </div>
+    <div class="trust" style="justify-content:center">
+      <span>Track it in your dashboard</span><span>Paid monthly</span>
+    </div>
+  </div>
+</section>
+
+<footer class="wrap">
+  <div class="links">
+    <a href="https://www.coinspot.com.au/my/affiliate">Affiliate dashboard</a>
+    <a href="https://www.coinspot.com.au">CoinSpot</a>
+    <a href="https://www.coinspot.com.au/affiliate">Program details</a>
+  </div>
+  <p>*"Some of our most successful Affiliate Program members are earning over $5,000 per month" and "Join 3 million other users" are CoinSpot's own published claims; results vary and are not guaranteed. Commissions are paid on fees collected, subject to CoinSpot's Affiliate Terms &amp; Conditions and changes to fees. This page is an independent promotional page, not an offer or financial advice. Cryptocurrency trading involves risk; never invest more than you can afford to lose.</p>
+</footer>
+
+<script>
+function copyLink(btn){
+  const link=btn.dataset.copy;
+  if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(link)}
+  else{const ta=document.createElement('textarea');ta.value=link;document.body.appendChild(ta);ta.select();document.execCommand('copy');ta.remove()}
+  const old=btn.textContent;btn.textContent='Copied ✓';
+  setTimeout(()=>btn.textContent=old,1800);
+}
+</script>
+</body>
+</html>
